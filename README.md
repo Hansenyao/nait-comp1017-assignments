@@ -1,2 +1,1 @@
-# nait-web-design-assignments
-All web design assignment projects at NAIT
+# This folder includes all assignment projects in Web Design course at NAIT DMIT.
