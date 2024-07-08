@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    padding-bottom: 24px;
+    padding-bottom: 48px;
 }
 
 h1, h2, h3 {
@@ -45,34 +45,26 @@ main>section {
     background-color: #ffffff;
 }
 
-.flex-container-info {
+.flex-container-main {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-.flex-container-info>section {
+.flex-container-main>section {
     background-color: #d6d6d6;
     border-width: 2px;
     border-style: solid;
     border-color: #949494;
     padding: 12px 12px 12px 12px;
+}
+
+#info>section {
     /* (960 - 24 - 4*2 - 4*12) / 2 = 440 */
     width: 440px;
 }
 
-.flex-container-blog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.flex-container-blog>section {
-    background-color: #d6d6d6;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #949494;
-    padding: 12px 12px 12px 12px;
+#blog>section {
     /* (960 - 2*24 - 6*2 - 6*12) / 3 = 276 */
     width: 276px;
 }
