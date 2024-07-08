@@ -1,4 +1,4 @@
-#CSS Layout Assignment
+# CSS Layout Assignment
 
 ## Introduction
 In this assignment, you are going to create a center page layout and duplicate the completed.png file that is provided for you. You are required to build a header with navigation boxes and two sections with columns (nested sections). Each area will test your ability and understanding of the CSS box model, selectors, the flex container, flex-wrap, and the concept of spacing with margins and padding. Make sure to use the browser developer tools to check your sizing.
