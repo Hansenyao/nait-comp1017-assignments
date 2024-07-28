@@ -109,6 +109,14 @@ main>section.flex-container {
     background-color: #008000;
 }
 
+.blog {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9CA3AF;
+    border-radius: 5px;
+    margin-bottom: 56px;
+}
+
 article {
     border-width: 1px;
     border-style: solid;
