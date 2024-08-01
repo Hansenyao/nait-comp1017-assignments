@@ -78,22 +78,20 @@ main>section.flex-container {
 
 .banner-content {
     background-color: rgba(123, 182, 97, 0.7);
-    margin: 60px 530px 60px 0px;
+    margin: 60px 530px 60px 0;
     padding: 10px 35px 28px 35px;
 }
 
 .banner-content>h2 {
     font-size: 60px;
     color: #FFBA00;
-    background-color: #fff;
 }
 
 .banner-content>p {
+    font-size: 18px;
     font-weight: bold;
     color: #FFFFFF;
-    /*line-height: 1.5;*/
-    background-color: #000;
-    padding-bottom: 14px;
+    padding-bottom: 8px;
     margin-bottom: 5px;
 }
 
@@ -101,7 +99,8 @@ main>section.flex-container {
     text-decoration: none;
     color: #008000;
     background-color: #FFBA00;
-    padding: 12px 51px;
+    padding: 10.5px 51px;
+    display: inline-block;
 }
 
 .banner-content>a:hover {
@@ -117,21 +116,13 @@ main>section.flex-container {
     margin-bottom: 56px;
 }
 
-article {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #9CA3AF;
-    border-radius: 5px;
-    margin-bottom: 56px;
-}
-
-.article-blog {
+.blog-article {
     display: flex;
     gap: 32px;
     padding: 19px 20px 19px 20px;
 }
 
-.article-footnote {
+.blog-footnote {
     display: flex;
     gap: 34px;
     margin-left: auto;
@@ -142,11 +133,11 @@ article {
     font-style: italic;
 }
 
-.article-footnote div{
+.blog-footnote div{
     margin: 12px 18px 10px 0;
 }
 
-.article-footnote>.flex-container {
+.blog-footnote>.flex-container {
     gap: 10px;
 }
 
