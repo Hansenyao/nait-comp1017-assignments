@@ -21,9 +21,16 @@ header {
     align-items: center;
 }
 
-header h1 {
+header>.title {
     margin-right: 96px;
-    line-height: 0;
+}
+
+header>.title>p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #006A4E;
+    margin-top: 6px;
+    margin-left: 219px;
 }
 
 header ul.flex-container {
@@ -40,6 +47,15 @@ header ul a {
 header ul a:hover {
     color: #008000;
     text-decoration: underline;
+}
+
+h1 {
+    font-family: "Domine", sans-serif;
+    font-weight: bold;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #008000;
+    line-height: 1;
 }
 
 h2 {
