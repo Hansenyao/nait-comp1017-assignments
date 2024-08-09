@@ -1,12 +1,3 @@
-/*
- *  1. Can I treat title in header as a logo image?
- *  2. Google fonts
- *
- *  3. Blogs gaps are not consistent
- *  4. Outline is odd 
- * 
-*/
-
 body {
     font-size: 100%;
     font-family: "Open Sans", sans-serif;
@@ -42,6 +33,7 @@ header ul.flex-container {
 
 header ul a {
     text-decoration: none;
+    font-size: 18px;
     color: #000;
 }
 
