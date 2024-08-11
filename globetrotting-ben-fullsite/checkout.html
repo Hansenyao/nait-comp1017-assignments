@@ -34,7 +34,7 @@
                     <h2>Checkout</h2>
                     <p>Book and reserve your spot!</p>
                 </div>
-
+                <!--Order area-->
                 <section class="order">
                     <h2>My Order</h2>
                     <img src="img/checkout-myorder.jpg" alt="my order image">
@@ -49,7 +49,7 @@
                         </tr>
                     </table>
                 </section>
-
+                <!--Payment area-->
                 <section class="payment">
                     <h2>Payment</h2>
                     <section>
@@ -59,21 +59,23 @@
                                 <label for="name">Name</label><br>
                                 <input type="text" name="name" id="name">
                             </div>
-                            <div class="address">
-                                <label for="address">Address</label><br>
-                                <input type="text" name="address" id="address">
-                            </div>
-                            <div class=city>
-                                <label for="city">City</label><br>
-                                <input type="text" name="city" id="city">
-                            </div>
-                            <div class=email>
-                                <label for="email">Email</label><br>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div class=telephone>
-                                <label for="telephone">Telephone</label><br>
-                                <input type="tel" name="telephone" id="telephone">
+                            <div class="flex-container">
+                                <div class="address">
+                                    <label for="address">Address</label><br>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                                <div class=city>
+                                    <label for="city">City</label><br>
+                                    <input type="text" name="city" id="city">
+                                </div>
+                                <div class=email>
+                                    <label for="email">Email</label><br>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class=telephone>
+                                    <label for="telephone">Telephone</label><br>
+                                    <input type="tel" name="telephone" id="telephone">
+                                </div>
                             </div>
                         </form>
                     </section>
@@ -84,17 +86,19 @@
                                 <label for="creditCard">Credit Card Number</label><br>
                                 <input type="number" name="creditCard" id="creditCard">
                             </div>
-                            <div class="expireDate">
-                                <label for="expireDate">Expire Date</label><br>
-                                <input type="date" name="expireDate" id="expireDate">
-                            </div>
-                            <div class="securityCode">
-                                <label for="securityCode">Security Code</label><br>
-                                <input type="number" name="securityCode" id="securityCode">
+                            <div class="flex-container">
+                                <div class="expireDate">
+                                    <label for="expireDate">Expire Date</label><br>
+                                    <input type="date" name="expireDate" id="expireDate">
+                                </div>
+                                <div class="securityCode">
+                                    <label for="securityCode">Security Code</label><br>
+                                    <input type="number" name="securityCode" id="securityCode">
+                                </div>
                             </div>
                         </form>
                     </section>
-                    <input type="button" value="Purchase">
+                    <input type="submit" class="btn" value="Purchase">
                 </section>
             </section>
         </main>
