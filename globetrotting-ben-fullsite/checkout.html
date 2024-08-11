@@ -52,12 +52,12 @@
                 <!--Payment area-->
                 <section class="payment">
                     <h2>Payment</h2>
-                    <section>
-                        <h3>Shipping Address</h3>
-                        <form action="#" method="post">
+                    <form action="#" method="post">
+                        <section class="address">
+                            <h3>Shipping Address</h3>
                             <div class="name">
-                                <label for="name">Name</label><br>
-                                <input type="text" name="name" id="name">
+                                <label for="name">Name</label><label class="required">*(required)</label> <br>
+                                <input type="text" name="name" id="name" required="true">
                             </div>
                             <div class="flex-container">
                                 <div class="address">
@@ -69,19 +69,17 @@
                                     <input type="text" name="city" id="city">
                                 </div>
                                 <div class=email>
-                                    <label for="email">Email</label><br>
-                                    <input type="email" name="email" id="email">
+                                    <label for="email">Email</label><label class="required">*(required)</label><br>
+                                    <input type="email" name="email" id="email" required="true">
                                 </div>
                                 <div class=telephone>
-                                    <label for="telephone">Telephone</label><br>
-                                    <input type="tel" name="telephone" id="telephone">
+                                    <label for="telephone">Telephone</label><label class="required">*(required)</label><br>
+                                    <input type="tel" name="telephone" id="telephone" required="true">
                                 </div>
                             </div>
-                        </form>
-                    </section>
-                    <section>
-                        <h3>Billing Information</h3>
-                        <form action="#" method="post">
+                        </section>
+                        <section class="billing">
+                            <h3>Billing Information</h3>
                             <div class="creditCard">
                                 <label for="creditCard">Credit Card Number</label><br>
                                 <input type="number" name="creditCard" id="creditCard">
@@ -96,9 +94,9 @@
                                     <input type="number" name="securityCode" id="securityCode">
                                 </div>
                             </div>
-                        </form>
-                    </section>
-                    <input type="submit" class="btn" value="Purchase">
+                        </section>
+                        <input type="submit" class="btn" value="Purchase">
+                    </form>
                 </section>
             </section>
         </main>

@@ -131,7 +131,7 @@ main>section.flex-container {
 .order>table th, td {
     border: 1px solid;
     color: #111827;
-    padding: 11px 15px;
+    padding: 10px 15px;
     text-align: center;
     font-weight: normal;
 }
@@ -141,8 +141,13 @@ main>section.flex-container {
     margin-bottom: 72px;
 }
 
-.payment>section {
+.payment section {
     margin-bottom: 48px;
+}
+
+.payment .required {
+    margin-left: 12px;
+    color: #B91C1C;
 }
 
 .payment input {
@@ -151,6 +156,8 @@ main>section.flex-container {
     /* 40 - 2*2(border) - 2*1(padding) */
     height: 34px;
     margin-top: 6px;
+    background-color: #F9FAFB;
+    border: 1px solid  #D1D5DB;
 }
 
 .payment #name, #creditCard {
