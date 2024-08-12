@@ -2,39 +2,45 @@ body {
     font-size: 100%;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    color: #000;
+    color: #111827;
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .flex-container {
     display: flex;
 }
 
-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-header>.title {
+h1 {
     margin-right: 96px;
+    line-height: 0;
 }
 
-header>.title>a {
-    text-decoration: none;
-}
-
-header>.title>p {
+h2 {
+    font-family: "Domine", sans-serif;
     font-weight: bold;
+    font-size: 48px;
     text-transform: uppercase;
+    color: #008000;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-family: "Domine", sans-serif;
     color: #006A4E;
-    margin-top: 6px;
-    margin-left: 219px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* header css for all pages */
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
 header ul.flex-container {
@@ -53,53 +59,29 @@ header ul a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    font-family: "Domine", sans-serif;
-    font-weight: bold;
-    font-size: 31px;
-    text-transform: uppercase;
-    color: #008000;
-    line-height: 1;
-}
-
-h2 {
-    font-family: "Domine", sans-serif;
-    font-weight: bold;
-    font-size: 48px;
-    text-transform: uppercase;
-    color: #008000;
-}
-
-h3 {
-    font-family: "Domine", sans-serif;
-    color: #006A4E;
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 11px;
-}
-
-main {
+/* main section css for home page (index.html) */
+main.home-page {
     background: url(../img/homepage-banner-bg.jpg) #fff no-repeat;
 }
 
-main>section.flex-container {
+.home-page>section.flex-container {
     display: flex;
     flex-flow: row wrap;
     gap: 51px;
 }
 
-.banner-content {
+.home-page .banner-content {
     background-color: rgba(123, 182, 97, 0.7);
     margin: 60px 530px 60px 0;
     padding: 10px 35px 28px 35px;
 }
 
-.banner-content>h2 {
+.home-page .banner-content>h2 {
     font-size: 60px;
     color: #FFBA00;
 }
 
-.banner-content>p {
+.home-page .banner-content>p {
     font-size: 18px;
     font-weight: bold;
     color: #FFFFFF;
@@ -107,7 +89,7 @@ main>section.flex-container {
     margin-bottom: 5px;
 }
 
-.banner-content>a {
+.home-page .banner-content>a {
     text-decoration: none;
     color: #008000;
     background-color: #FFBA00;
@@ -115,12 +97,12 @@ main>section.flex-container {
     display: inline-block;
 }
 
-.banner-content>a:hover {
+.home-page .banner-content>a:hover {
     color: #fff;
     background-color: #008000;
 }
 
-.blog {
+.home-page .blog {
     border-width: 1px;
     border-style: solid;
     border-color: #9CA3AF;
@@ -128,13 +110,13 @@ main>section.flex-container {
     margin-bottom: 56px;
 }
 
-.blog-article {
+.home-page .blog-article {
     display: flex;
     gap: 32px;
     padding: 19px 20px 19px 20px;
 }
 
-.blog-footnote {
+.home-page .blog-footnote {
     display: flex;
     gap: 34px;
     margin-left: auto;
@@ -145,14 +127,205 @@ main>section.flex-container {
     font-style: italic;
 }
 
-.blog-footnote div{
+.home-page .blog-footnote div{
     margin: 12px 18px 10px 0;
 }
 
-.blog-footnote>.flex-container {
+.home-page .blog-footnote>.flex-container {
     gap: 10px;
 }
 
+/* main section css for tours page (tours.html) */
+main.tours-page {
+    background: url(../img/tours-banner-bg.jpg) #fff no-repeat;
+}
+
+.tours-page>section.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 49px;
+}
+
+.tours-page .banner-content>h2 {
+    font-size: 60px;
+    color: #FFBA00;
+    margin: 78px 711px 0 35px;
+}
+
+.tours-page .banner-content>p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 582px 78px 35px;
+}
+
+.tours-page .flex-container-offer {
+    display: flex;
+    gap: 30px;
+}
+
+.tours-page .flex-container-offer>section {
+    width: 300px;
+    text-align: center;
+    gap: 12px;
+}
+
+.tours-page .flex-container-tours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.tours-page .flex-container-tours>article {
+    /*(960-30-4*18)/2*/
+    width: 429px;
+    background-color: #F3F4F6;
+    padding: 18px 18px 35px 18px;
+}
+
+.tours-page .flex-container-tours>article>img {
+    margin-bottom: 24px;
+}
+
+.tours-page .flex-container-tours>article>h3 {
+    margin-bottom: 12px;
+}
+
+.tours-page .flex-container-tours>article>p {
+    margin-bottom: 12px;
+}
+
+.tours-page .flex-container-tours>article>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #111827;
+}
+
+.tours-page .flex-container-tours>article>a:hover {
+    text-decoration: underline;;
+}
+
+/* main section css for checkout page (checout.html) */
+main.checkout-page {
+    background: url(../img/checkout-banner-bg.jpg) #fff no-repeat;
+}
+
+.checkout-page>section.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.checkout-page .banner-content {
+    /* 49 - 30*/
+    margin-bottom: 19px;
+}
+
+.checkout-page .banner-content>h2 {
+    font-size: 60px;
+    color: #FFBA00;
+    margin: 123px 573px 0 36px;
+}
+
+.checkout-page .banner-content>p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 581px 60px 36px;
+}
+
+.checkout-page .order {
+    width: 300px;
+}
+
+.checkout-page .order>img {
+    margin-bottom: 12px;
+}
+
+.checkout-page .order>h3 {
+    margin-bottom: 0;
+}
+.checkout-page .order>p {
+    margin-bottom: 12px;
+}
+
+.checkout-page .order>table {
+    border-collapse: collapse;
+    border: 1px solid;
+    color: #111827;
+}
+
+.checkout-page .order>table th, td {
+    border: 1px solid;
+    color: #111827;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.checkout-page .payment {
+    width: 630px;
+    margin-bottom: 72px;
+}
+
+.checkout-page .payment h3 {
+    margin-bottom: 24px;
+}
+
+.checkout-page .payment section {
+    margin-bottom: 48px;
+}
+
+.checkout-page .payment .required {
+    margin-left: 12px;
+    color: #B91C1C;
+}
+
+.checkout-page .payment input {
+    /* 300 - 2*2(border) - 2*2(padding) */
+    width: 292px;
+    /* 40 - 2*2(border) - 2*1(padding) */
+    height: 34px;
+    margin-top: 6px;
+    background-color: #F9FAFB;
+    border: 1px solid  #D1D5DB;
+}
+
+.checkout-page .payment #name, #creditCard {
+    /* 630 - 2*2(border) - 2*2(padding) */
+    width: 622px;
+}
+
+.checkout-page .payment #name, #address, #city, #creditCard {
+    margin-bottom: 24px;
+}
+
+.checkout-page input.btn {
+    width: 630px;
+    height: 40px;
+    color: #008000;
+    font-weight: bold;
+    background-color: #FFBA00;
+    border: 0;
+    border-radius: 4px;
+}
+
+.checkout-page input.btn:hover {
+    background-color: #008000;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 3px #FFBA00;
+}
+
+.checkout-page .payment .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* footer css for all pages */
 footer {
     padding: 48px 50px;
     color: #fff;
@@ -190,6 +363,7 @@ footer>div.line {
     background-color: #fff;
     margin-bottom: 24px;
 }
+
 footer>p {
     text-align: center;
 }
