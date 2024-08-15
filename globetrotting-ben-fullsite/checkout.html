@@ -52,10 +52,10 @@
                 <section class="payment">
                     <h2>Payment</h2>
                     <form action="#" method="post">
-                        <section class="address">
+                        <fieldset class="address">
                             <h3>Shipping Address</h3>
                             <div class="name">
-                                <label for="name">Name</label><label class="required">*(required)</label> <br>
+                                <label for="name">Name <span class="red-text">*(required)</span></label><br>
                                 <input type="text" name="name" id="name" required>
                             </div>
                             <div class="flex-container">
@@ -68,16 +68,16 @@
                                     <input type="text" name="city" id="city">
                                 </div>
                                 <div class=email>
-                                    <label for="email">Email</label><label class="required">*(required)</label><br>
+                                    <label for="email">Email <span class="red-text">*(required)</span></label><br>
                                     <input type="email" name="email" id="email" required>
                                 </div>
                                 <div class=telephone>
-                                    <label for="telephone">Telephone</label><label class="required">*(required)</label><br>
+                                    <label for="telephone">Telephone <span class="red-text">*(required)</span></label><br>
                                     <input type="tel" name="telephone" id="telephone" required>
                                 </div>
                             </div>
-                        </section>
-                        <section class="billing">
+                        </fieldset>
+                        <fieldset class="billing">
                             <h3>Billing Information</h3>
                             <div class="creditCard">
                                 <label for="creditCard">Credit Card Number</label><br>
@@ -93,7 +93,8 @@
                                     <input type="number" name="securityCode" id="securityCode">
                                 </div>
                             </div>
-                        </section>
+                        </fieldset>
+                        <!-- PLEASE MAKE SURE TH SUBMIT BUTTON IS IN THE FORM AND OUTSIDE THE FIELDSETS -->
                         <input type="submit" class="btn" value="Purchase">
                     </form>
                 </section>

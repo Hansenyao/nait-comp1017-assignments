@@ -273,12 +273,13 @@ main.checkout-page {
     margin-bottom: 24px;
 }
 
-.checkout-page .payment section {
-    margin-bottom: 48px;
+.checkout-page .payment fieldset{
+    margin: 0 0 48px 0;
+    padding: 0;
+    border: none;
 }
 
-.checkout-page .payment .required {
-    margin-left: 12px;
+.checkout-page .payment .red-text {
     color: #B91C1C;
 }
 
